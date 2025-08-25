@@ -1,58 +1,771 @@
 ---
 # Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Anonydashy
+  description: Welcome to anonysoul's dashy dashboard!
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
+    - title: Vaultwarden
+      path: https://vaultwarden.anonysoul.com
+    - title: IT-TOOLS
+      path: https://dev.anonysoul.com
+    - title: CasaOS
+      path: http://router.anonysoul.com:8114
+  footerText: ©2022-2024. Anonysoul. All Rights Reserved
 
 # Optional app settings and configuration
 appConfig:
-  theme: colorful
+  auth:
+    enableGuestAccess: false
+    users:
+      - user: anonysoul
+        hash: 26ADA03F643CF55C38BAAFE58057264F46846926BD87A7B5ABA15EF8C5EFB8FE
+        type: admin
+  theme: dashy-docs
+  customColors:
+    Nord:
+      primary: "#f5f5f5"
+      background: "#bfbfbf"
+      background-darker: "#00b8a2"
+    dashy-docs:
+      primary: "#f5f5f5"
+      background: "#636363"
+      background-darker: "#0d0d0d"
+  language: cn
+  hideComponents:
+    hideSettings: true
+  webSearch:
+    searchEngine: google
 
 # Main content - An array of sections, each containing an array of items
 sections:
-  - name: Getting Started
-    icon: fas fa-rocket
+  - name: AI 大模型
     items:
-      - title: GitHub
-        description: Source Code, Issues and Pull Requests
-        url: https://github.com/lissy93/dashy
-        icon: si-github
-      - title: Docs
-        description: Configuring & Usage Documentation
-        provider: Dashy.to
-        icon: far fa-book
-        url: https://dashy.to/docs
-
-  - name: Support Dashy
-    icon: fas fa-heart
-    displayData:
-      itemSize: large
-    widgets:
-      - type: image
-        label: Dashy is made possible thanks to our awesome sponsors
-        options:
-          imagePath: https://readme-contribs.as93.net/sponsors/lissy93?perRow=5&shape=squircle
+      - title: ChatGPT
+        icon: chatgpt.png
+        url: https://chatgpt.com/
+      - title: DeepSeek
+        icon: deepseek.png
+        url: https://chat.deepseek.com/
+      - title: Gemini
+        icon: gemini.png
+        url: https://gemini.google.com/app
+      - title: Grok
+        icon: grok.png
+        url: https://grok.com/?referrer=website
+      # - title: Claude
+      #   icon: favicon
+      #   url: https://claude.ai/
+      # - title: Mistral
+      #   icon: favicon
+      #   url: https://chat.mistral.ai/chat
+  - name: 搜索引擎
     items:
-      - title: Sponsor
-        url: https://github.com/sponsors/lissy93
-        description: Sponsor @Lissy93 on GitHub to support with ongoing development of Dashy
-        icon: 🩷
-        color: '#ff78d1'
-        backgroundColor: '#c30c844a'
-
-  - name: Latest Updates
-    icon: fas fa-code-branch
+      - title: DuckDuckGo
+        icon: duckduckgo.png
+        url: https://duckduckgo.com/
+      - title: 百度
+        icon: baidu.png
+        url: https://www.baidu.com/
+      - title: 必应
+        icon: bing.png
+        url: https://cn.bing.com/
+      - title: google
+        icon: google.png
+        url: https://www.google.com.hk
+  - name: 地图
+    items:
+      - title: 高德
+        icon: gaode.png
+        url: https://www.amap.com/
+      - title: 百度
+        icon: map-baidu.png
+        url: https://map.baidu.com/
+      - title: google
+        icon: map-google.png
+        url: https://www.google.co.jp/maps?hl=zh-CN
+      - title: openstreet
+        icon: openstreet.png
+        url: https://www.openstreetmap.org/
+  - name: 翻译
+    items:
+      - title: 有道翻译
+        description: ""
+        icon: youdao.png
+        url: https://fanyi.youdao.com/
+        target: newtab
+      - title: 谷歌翻译
+        description: ""
+        icon: translate-google.png
+        url: https://translate.google.com/
+      - title: 必应翻译
+        description: ""
+        icon: translate-bing.png
+        url: https://cn.bing.com/translator/
+      - title: codelf
+        icon: codelf.png
+        url: https://unbug.github.io/codelf/
+  - name: Version Control
     displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: github
+        icon: favicon
+        url: https://github.com/
+      - title: gitlab
+        icon: gitlab.png
+        # url: https://packages.gitlab.com/gitlab
+        url: https://gitlab.dev.skywo-safe.com/
+      - title: azure
+        icon: azure-git.png
+        url: https://dev.azure.com/
+      - title: gitee
+        icon: favicon
+        url: https://gitee.com/
+        target: newtab
+      - title: svnbucket
+        icon: favicon
+        url: https://svnbucket.com/
+        target: newtab
+  - name: 论坛
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: 知乎
+        icon: zhihu.png
+        url: https://www.zhihu.com/
+      - title: 吾爱破解
+        icon: 52pojie.png
+        url: https://www.52pojie.cn/
+      - title: Twitter
+        icon: twitter.png
+        url: https://twitter.com/
+      - title: quora
+        icon: quora.png
+        url: https://www.quora.com/
+      - title: RaGEZONE
+        icon: favicon
+        url: https://forum.ragezone.com/
+      - title: v2ex
+        icon: v2ex.png
+        url: https://www.v2ex.com/
+      # - title: breached
+      #   icon: bf.png
+      #   url: https://breached.to/
+      # - title: stackoverflow
+      #   icon: stackoverflow.png
+      #   url: https://stackoverflow.com/
+      # - title: CodeProject
+      #   icon: codeproject.png
+      #   url: https://www.codeproject.com/
+  - name: 流媒体
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: 哔哩哔哩
+        icon: bilibili.png
+        url: https://www.bilibili.com/
+      - title: YouTuBe
+        icon: youtube.png
+        url: https://www.youtube.com/
+      # - title: Netflix
+      #   icon: netflix.png
+      #   url: https://www.netflix.com/
+      # - title: hulu
+      #   icon: hulu.png
+      #   url: https://www.hulu.com/
+      # - title: spotify
+      #   icon: spotify.png
+      #   url: https://open.spotify.com/
+  - name: Net Tools
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: 网信办
+        icon: 12377.png
+        url: https://www.12377.cn/
+      - title: Whois
+        icon: favicon
+        url: https://lookup.icann.org/zh
+      - title: Let's Encrypt
+        icon: letsencrypt.png
+        url: https://letsencrypt.org/zh-cn/
+      - title: FreeSSL
+        icon: freessl.png
+        url: https://freessl.cn/
+      - title: 17CE
+        icon: 17ce.png
+        url: https://www.17ce.com/
+      - title: Internet Archive
+        icon: net-archive.png
+        url: https://archive.org/
+  - name: VPS & APP
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: 阿里云
+        icon: ali.png
+        url: https://www.aliyun.com/
+      - title: 腾讯云
+        icon: tengxun.png
+        url: https://cloud.tencent.com/
+      # - title: 华为云
+      #   icon: huawei.png
+      #   url: https://www.huaweicloud.com/
+      # - title: 浪潮云
+      #   icon: inspur.png
+      #   url: https://cloud.inspur.com/
+      # - title: 金山云
+      #   icon: ks.png
+      #   url: https://www.ksyun.com/
+      # - title: 人民云
+      #   icon: people.png
+      #   url: https://peopleyun.cn/
+      # - title: azure
+      #   icon: azure.png
+      #   url: https://portal.azure.com/
+      # - title: google
+      #   icon: google-cloud.png
+      #   url: https://console.cloud.google.com/
+      # - title: amazon
+      #   icon: favicon
+      #   url: https://aws.amazon.com/cn/
+      - title: bandwagon
+        icon: bandwagonhost.png
+        url: https://bandwagonhost.com/
+      - title: vultr
+        icon: favicon
+        url: https://my.vultr.com/
+      - title: namesilo
+        icon: favicon
+        url: https://www.namesilo.com/
+      - title: Cloudflare
+        icon: favicon
+        url: https://www.cloudflare.com/
+      # - title: netlify
+      #   icon: netlify.png
+      #   url: https://app.netlify.com/
+      # - title: fly.io
+      #   icon: favicon
+      #   url: https://fly.io/
+  - name: Other
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 4
+      rows: 1
+      cols: 2
+    items:
+      - title: 测速网
+        icon: speedtest.png
+        url: https://www.speedtest.cn/
+      - title: 维基百科
+        icon: wikipedia.png
+        url: https://www.wikipedia.org/
+      - title: Windy
+        icon: windy.png
+        url: https://www.windy.com/
+      - title: REG007
+        icon: reg007.png
+        url: https://www.reg007.com/
+      - title: 全历史
+        icon: allhistory.png
+        url: https://www.allhistory.com/
+      - title: iFixit
+        icon: ifixit.png
+        url: https://zh.ifixit.com/
+      - title: RARBG
+        icon: rarbg.png
+        url: http://rarbg.to/
+      - title: Anon Addy
+        icon: anonaddy.png
+        url: https://anonaddy.com/
+      - title: ImprovMX
+        icon: improvmx.png
+        url: https://app.improvmx.com/
+      - title: Open Sea
+        icon: opensea.png
+        url: https://opensea.io/
+      - title: 航班座位图
+        icon: seatmaps.png
+        url: https://seatmaps.com/zh-CN/
+      - title: Radio Garden
+        icon: radio-garden.png
+        url: https://radio.garden/
+  - name: 镜像源
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: 阿里
+        icon: source.png
+        statusCheck: true
+        url: https://developer.aliyun.com/mirror/
+      - title: 华为
+        icon: source.png
+        statusCheck: true
+        url: https://mirrors.huaweicloud.com/home/
+      - title: 网易
+        icon: source.png
+        statusCheck: true
+        url: https://mirrors.163.com/
+      - title: 清华大学
+        icon: source.png
+        statusCheck: true
+        url: https://mirrors.tuna.tsinghua.edu.cn/
+      - title: 南京邮大
+        icon: source.png
+        statusCheck: true
+        url: http://mirrors.njupt.edu.cn/
+  - name: Development - web
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: Node.js
+        icon: nodejs.png
+        url: https://nodejs.org/
+      - title: npm
+        icon: npmjs.png
+        url: https://www.npmjs.com/
+      - title: W3school
+        icon: w3school.png
+        url: https://www.w3school.com.cn/
+      - title: MDN
+        icon: mdn.png
+        url: https://developer.mozilla.org/zh-CN/
+      - title: webpack
+        icon: webpackjs.png
+        url: https://www.webpackjs.com/
+      - title: ECharts
+        icon: echarts.png
+        url: https://echarts.apache.org/
+      - title: Angular
+        icon: angular.png
+        url: https://angular.cn/
+      - title: Ant Design
+        icon: ant-design.png
+        url: https://ant.design/
+      - title: Onsen UI
+        icon: favicon
+        url: https://onsen.io/
+      - title: MUI
+        icon: mui.png
+        url: http://dev.dcloud.net.cn/mui/
+      - title: Bootstrap
+        icon: bootcss.png
+        url: https://www.bootcss.com/
+      - title: Vue
+        icon: vuejs.png
+        url: https://cn.vuejs.org/
+      - title: sweet alert 2
+        icon: sweetalert2.png
+        url: https://sweetalert2.github.io/
+      - title: PDF LIB
+        icon: pdf-lib.png
+        url: https://pdf-lib.js.org/
+  - name: Development - java
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: sonatype
+        icon: sonatype.png
+        url: https://search.maven.org/
+      - title: MVN Repository
+        icon: mvnrepository.png
+        url: https://mvnrepository.com/
+      - title: spring
+        icon: spring.png
+        url: https://spring.io/
+      - title: jOOQ
+        icon: jooq.png
+        url: https://www.jooq.org/
+      - title: FreeMarker
+        icon: freemarker.png
+        url: https://freemarker.apache.org/
+  - name: Development - source
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: yesicon
+        icon: favicon
+        url: https://yesicon.app/
+      # - title: Font Awesome
+      #  icon: fontawesome.png
+      #  url: https://fontawesome.com/
+      - title: iconfont
+        icon: iconfont.png
+        url: https://www.iconfont.cn/
+      - title: flaticon
+        icon: flaticon.png
+        url: https://www.flaticon.com/
+      - title: Favicon Service
+        icon: favicon.png
+        url: https://favicon.allesedv.com/
+      - title: PNG img
+        icon: pngimg.png
+        url: https://pngimg.com/
+      # - title: 花瓣
+      #   icon: huaban.png
+      #   url: https://huaban.com/
+      - title: Canva
+        icon: canva.png
+        url: https://www.canva.com/
+      - title: Pexels
+        icon: pexels.png
+        url: https://www.pexels.com/
+      - title: Adobe Color
+        icon: adobe-color.png
+        url: https://color.adobe.com/zh/create/
+      - title: Adobe Express
+        icon: cc-express.png
+        url: https://www.adobe.com/cn/express/
+      - title: Resource Boy
+        icon: resource-boy.png
+        url: https://resourceboy.com/
+      - title: worldvectorlogo
+        icon: worldvectorlogo.png
+        url: https://worldvectorlogo.com/
+      - title: free sounds
+        icon: free-sounds.png
+        url: https://freesound.org/
+      - title: FMHY
+        icon: fmhy.png
+        url: https://fmhy.net/
+  - name: Development - other
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 2
+      rows: 1
+    items:
+      - title: MSDN
+        icon: msdn.png
+        url: https://msdn.itellyou.cn/
+      - title: Docker
+        icon: docker.png
+        url: https://www.docker.com/
+      - title: ASCIIFlow
+        icon: asciiflow.png
+        url: https://asciiflow.com/
+      - title: Hosted Weblate
+        icon: hosted-weblate.png
+        url: https://hosted.weblate.org/
+      - title: Greasy Fork
+        icon: greasyfork.png
+        url: https://greasyfork.org/zh-CN
+      - title: Shields.io
+        icon: shields-io.png
+        url: https://shields.io/
+      - title: PMGEEK
+        icon: pmgeek.png
+        url: https://pmgeek.net/
+  - name: 软件
+    displayData:
+      rows: 1
+      cols: 3
+      collapsed: false
+    items:
+      - title: VS
+        icon: vs.png
+        url: https://visualstudio.microsoft.com/zh-hans/vs/
+      - title: IDEA
+        icon: jetbrains.png
+        url: https://www.jetbrains.com/zh-cn/idea/
+      - title: VS Code
+        icon: vscode.png
+        url: https://code.visualstudio.com/
+      - title: Notepad++
+        icon: notepad.png
+        url: https://notepad-plus-plus.org/downloads/
+      - title: Git
+        icon: git.png
+        url: https://git-scm.com/
+      - title: Copilot
+        icon: github-copilot.png
+        url: https://github.com/features/copilot
+      - title: DBeaver
+        icon: dbeaver.png
+        url: https://dbeaver.io/
+      - title: Navicat
+        icon: navicat.png
+        url: https://www.navicat.com/
+      - title: Postman
+        icon: postman.png
+        url: https://www.postman.com/
+      - title: Chrome
+        icon: chrome.png
+        url: https://www.google.com/intl/zh-CN/chrome/
+      - title: Tor Browser
+        icon: torproject.png
+        url: https://www.torproject.org/download/
+      - title: Notion
+        icon: notion.png
+        url: https://www.notion.so/
+      - title: Listary
+        icon: listary.png
+        url: https://www.listary.com/
+      - title: PostgreSQL
+        icon: postgresql.png
+        url: https://www.enterprisedb.com/download-postgresql-binaries
+      - title: Elasticsearch
+        icon: elasticsearch.png
+        url: https://www.elastic.co/cn/
+      - title: ClamAV
+        icon: clamav.png
+        url: https://www.clamav.net/
+      - title: 7-Zip
+        icon: 7z.png
+        url: https://www.7-zip.org/
+      - title: SysGauge
+        icon: sysgauge.png
+        url: https://www.sysgauge.com/
+      - title: Rufus
+        icon: rufus.png
+        url: https://rufus.ie/zh/
+      - title: FFmpeg
+        icon: ffmpeg.png
+        url: https://ffmpeg.org/
+      - title: PuTTY
+        icon: putty.png
+        url: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+      - title: Open VPN
+        icon: openvpn.png
+        url: https://openvpn.net/
+      - title: BestTrace
+        icon: best-trace.png
+        url: https://www.ipip.net/product/client.html
+      - title: QTTabBar
+        icon: qtabar.png
+        url: http://qttabbar.wikidot.com/
+      - title: Ventoy
+        icon: ventoy.png
+        url: https://www.ventoy.net/
+      - title: Traffic Monitor
+        icon: TrafficMonitor.png
+        url: https://github.com/zhongyang219/TrafficMonitor
+      - title: TranslucentTB
+        icon: TranslucentTB.png
+        url: https://github.com/TranslucentTB/TranslucentTB
+      - title: ScreenToGif
+        icon: ScreenToGif.png
+        url: https://github.com/NickeManarin/ScreenToGif
+      - title: code-server
+        icon: code-server.png
+        url: https://github.com/coder/code-server
+      - title: Uptime Kuma
+        icon: uptime-kuma.png
+        url: https://github.com/louislam/uptime-kuma
+      - title: Arthas
+        icon: arthas.png
+        url: https://github.com/alibaba/arthas
+      - title: Attribute Changer
+        icon: petges.png
+        url: https://www.petges.lu/
+      - title: HyperDock
+        icon: hyperdock.png
+        url: https://bahoom.com/hyperdock
+      - title: Tuxera NTFS
+        icon: tuxera.png
+        url: https://www.tuxera.com/
+      - title: OBS
+        icon: obsproject.png
+        url: https://obsproject.com/
+      - title: IINA
+        icon: iina.png
+        url: https://iina.io/
+      - title: AltStore
+        icon: altstore.png
+        url: https://altstore.io/
+      - title: Sideloadly
+        icon: sideloadly.png
+        url: https://sideloadly.io/
+      - title: VMware
+        icon: vmware.png
+        url: https://www.vmware.com/
+      - title: Proxmox
+        icon: proxmox.png
+        url: https://www.proxmox.com/
+      - title: Motrix
+        icon: motrix.png
+        url: https://github.com/agalwood/Motrix
+      - title: NetSetMan
+        icon: nsm.png
+        url: https://www.netsetman.com
+      - title: Excalidraw
+        icon: favicon
+        url: https://excalidraw.com/
+  - name: AppStore
+    displayData:
+      itemSize: small
+      sectionLayout: grid
+      itemCountX: 1
+      rows: 1
       cols: 1
-      rows: 3
-      cutToHeight: true
-    widgets:
-      - type: rss-feed
-        options:
-          rssUrl: https://github.com/lissy93/dashy/releases.atom
-          limit: 5
+      collapsed: false
+    items:
+      - title: Awesome Privacy
+        icon: favicon
+        url: https://awesome-privacy.xyz/
+      - title: Privacy Tools
+        icon: privacytools.png
+        url: https://www.privacytools.io/
+      - title: APKMirror
+        icon: apkmirror.png
+        url: https://www.apkmirror.com/
+      - title: Downloadly
+        icon: downloadly.png
+        url: https://downloadly.net/
+      - title: Cracked Software Links
+        icon: crackedlink.png
+        url: https://crackedlink.com/
+      - title: Cmacked
+        icon: cmacked.png
+        url: https://apps.cmacked.com/
+      # - title: MacWk
+      #   icon: macwk.png
+      #   url: https://www.macwk.com/
+      - title: zd423
+        icon: zd423.png
+        url: https://www.zdfans.com/
+      - title: 3DM Game
+        icon: 3dm.png
+        url: https://www.3dmgame.com/
+  - name: 游戏
+    displayData:
+      rows: 1
+      cols: 1
+      collapsed: false
+    items:
+      - title: 红警
+        icon: red-alert.png
+        url: https://ra2web.com/
+      - title: CS
+        icon: cs.png
+        url: https://play-cs.com/
+      - title: POKI
+        icon: poki.png
+        url: https://poki.com/
+      - title: Slow Roads
+        icon: slow-roads.svg
+        url: https://slowroads.io/
+      - title: territorial
+        icon: territorial.png
+        url: https://territorial.io/
+      - title: slither
+        icon: slither.png
+        url: http://slither.com/io
+      - title: air console
+        icon: air-console.png
+        url: https://www.airconsole.com/
+  - name: 学习
+    displayData:
+      rows: 1
+      cols: 2
+      collapsed: false
+    items:
+      - title: kiddo worksheets
+        icon: kiddo-worksheets.png
+        url: https://www.kiddoworksheets.com/
+      - title: 儿童睡前故事
+        icon: beddystories.png
+        url: https://beddystories.com/zh
+      - title: Z2H 字帖
+        icon: z2h.png
+        url: https://z2h.cn/
+      - title: 写个字吧
+        icon: xgzb.png
+        url: https://xgzb.top/han
+      - title: 中小学智慧教育
+        icon: basic-smart-edu.png
+        url: https://basic.smartedu.cn/
+      - title: 教材
+        icon: rmjy.png
+        url: https://github.com/TapXWorld/ChinaTextbook
+      - title: PhET
+        icon: phet.png
+        url: https://phet.colorado.edu/zh_CN/
+      - title: 智慧高教
+        icon: zhgj.png
+        url: https://www.chinaooc.com.cn/
+      - title: 默沙东诊疗手册
+        icon: msd.png
+        url: https://www.msdmanuals.cn/
+      - title: 中国医药信息查询平台
+        icon: yyxxcxpt.png
+        url: https://www.dayi.org.cn/
+      - title: 中国庭审公开网
+        icon: tsgkw.png
+        url: https://tingshen.court.gov.cn/
+  - name: 工具
+    displayData:
+      rows: 1
+      cols: 1
+      collapsed: false
+    items:
+      - title: Snapany
+        icon: snapany.png
+        url: https://snapany.com/
+      - title: Pranx
+        icon: pranx.png
+        url: https://pranx.com/
+      - title: Voical Remover
+        icon: vocalremover.png
+        url: https://vocalremover.org/
+      - title: magic eraser
+        icon: magiceraser.png
+        url: https://magiceraser.pro/
+      - title: photopea
+        icon: photopea.png
+        url: https://www.photopea.com/
+      - title: Cloud Convert
+        icon: cloud-convert.png
+        url: https://cloudconvert.com/
+      - title: Remove Photos
+        icon: remove-photos.png
+        url: https://remove.photos/
+  # - name: Project
+  #   displayData:
+  #     hideForGuests: true
+  #     itemSize: small
+  #     sectionLayout: grid
+  #     itemCountX: 2
+  #     rows: 1
+  #     # collapsed: true
+  #   items:
+  #     - title: teleindex
+  #       icon: git.png
+  #       url: https://github.com/anonysoul/teleindex
+  #     - title: dashy
+  #       icon: git.png
+  #       url: https://github.com/anonysoul/dashy
+  #     - title: net-proxied
+  #       icon: git.png
+  #       url: https://github.com/net-breaker/net-proxied
+  #     - title: sing-land
+  #       icon: git.png
+  #       url: https://github.com/net-breaker/sing-land

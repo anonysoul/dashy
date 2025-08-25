@@ -49,8 +49,8 @@
 	},
 
 	// Runs once after the container is created, then VS Code attaches.
-	"postCreateCommand": "yarn install --network-timeout 600000"
+	"postCreateCommand": "yarn install --network-timeout 600000",
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "root"
 }
