@@ -112,7 +112,7 @@ sections:
       rows: 1
     items:
       - title: github
-        icon: favicon
+        icon: github.svg
         url: https://github.com/
       - title: gitlab
         icon: gitlab.png
@@ -247,18 +247,18 @@ sections:
       - title: bandwagon
         icon: bandwagonhost.png
         url: https://bandwagonhost.com/
-      - title: vultr
-        icon: favicon
-        url: https://my.vultr.com/
+      # - title: vultr
+      #   icon: favicon
+      #   url: https://my.vultr.com/
       - title: namesilo
         icon: favicon
         url: https://www.namesilo.com/
       - title: Cloudflare
         icon: favicon
         url: https://www.cloudflare.com/
-      # - title: netlify
-      #   icon: netlify.png
-      #   url: https://app.netlify.com/
+      - title: netlify
+        icon: netlify.png
+        url: https://app.netlify.com/
       # - title: fly.io
       #   icon: favicon
       #   url: https://fly.io/
@@ -619,6 +619,15 @@ sections:
       - title: Excalidraw
         icon: favicon
         url: https://excalidraw.com/
+      - title: Sunshine
+        icon: sunshine.png
+        url: https://github.com/LizardByte/Sunshine/
+      - title: Apollo
+        icon: github.svg
+        url: https://github.com/ClassicOldSong/Apollo
+      - title: Moonlight
+        icon: moonlight.png
+        url: https://github.com/moonlight-stream
   - name: AppStore
     displayData:
       itemSize: small
