@@ -176,6 +176,9 @@ sections:
       - title: YouTuBe
         icon: youtube.png
         url: https://www.youtube.com/
+      - title: Garden TV
+        icon: garden_tb.svg
+        url: https://tv.garden/
       # - title: Netflix
       #   icon: netflix.png
       #   url: https://www.netflix.com/
@@ -601,6 +604,9 @@ sections:
       - title: OBS
         icon: obsproject.png
         url: https://obsproject.com/
+      - title: Code Former
+        icon: code_former.png
+        url: https://github.com/sczhou/CodeFormer
       - title: IINA
         icon: iina.png
         url: https://iina.io/
@@ -703,9 +709,6 @@ sections:
       - title: cartoong games
         icon: cartoongames.png
         url: https://cartoongames.io/
-      - title: quick riddle
-        icon: quickriddle.png
-        url: https://quickriddle.online/
   - name: 学习
     displayData:
       rows: 1
