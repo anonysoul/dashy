@@ -438,6 +438,9 @@ sections:
       - title: Pexels
         icon: pexels.png
         url: https://www.pexels.com/
+      - title: APPLORE
+        icon: applore.svg
+        url: https://app.uiboy.com/
       - title: Adobe Color
         icon: adobe-color.png
         url: https://color.adobe.com/zh/create/
@@ -556,6 +559,9 @@ sections:
       - title: Open VPN
         icon: openvpn.png
         url: https://openvpn.net/
+      - title: tailscale
+        icon: tailscale.svg
+        url: https://tailscale.com/
       - title: BestTrace
         icon: best-trace.png
         url: https://www.ipip.net/product/client.html
@@ -691,6 +697,15 @@ sections:
       - title: air console
         icon: air-console.png
         url: https://www.airconsole.com/
+      - title: crazy games
+        icon: crazygames.svg
+        url: https://www.crazygames.com/
+      - title: cartoong games
+        icon: cartoongames.png
+        url: https://cartoongames.io/
+      - title: quick riddle
+        icon: quickriddle.png
+        url: https://quickriddle.online/
   - name: 学习
     displayData:
       rows: 1
@@ -721,6 +736,9 @@ sections:
       - title: 智慧高教
         icon: zhgj.png
         url: https://www.chinaooc.com.cn/
+      - title: 终身教育平台
+        icon: ouchn.png
+        url: https://le.ouchn.cn/
       - title: 默沙东诊疗手册
         icon: msd.png
         url: https://www.msdmanuals.cn/
