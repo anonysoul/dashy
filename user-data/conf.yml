@@ -640,6 +640,9 @@ sections:
       - title: Moonlight
         icon: moonlight.png
         url: https://github.com/moonlight-stream
+      - title: cloc
+        icon: github.svg
+        url: https://github.com/AlDanial/cloc
   - name: AppStore
     displayData:
       itemSize: small
@@ -673,9 +676,6 @@ sections:
       - title: zd423
         icon: zd423.png
         url: https://www.zdfans.com/
-      - title: 3DM Game
-        icon: 3dm.png
-        url: https://www.3dmgame.com/
   - name: 游戏
     displayData:
       rows: 1
@@ -709,6 +709,9 @@ sections:
       - title: cartoong games
         icon: cartoongames.png
         url: https://cartoongames.io/
+      - title: 3DM Game
+        icon: 3dm.png
+        url: https://www.3dmgame.com/
   - name: 学习
     displayData:
       rows: 1
