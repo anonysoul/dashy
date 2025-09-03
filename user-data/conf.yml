@@ -553,6 +553,9 @@ sections:
       - title: Rufus
         icon: rufus.png
         url: https://rufus.ie/zh/
+      - title: Ventoy
+        icon: ventoy.png
+        url: https://www.ventoy.net/
       - title: FFmpeg
         icon: ffmpeg.png
         url: https://ffmpeg.org/
@@ -571,9 +574,9 @@ sections:
       - title: QTTabBar
         icon: qtabar.png
         url: http://qttabbar.wikidot.com/
-      - title: Ventoy
-        icon: ventoy.png
-        url: https://www.ventoy.net/
+      - title: Log viewer
+        icon: log-viewer.png
+        url: https://www.uvviewsoft.com/logviewer/
       - title: Traffic Monitor
         icon: TrafficMonitor.png
         url: https://github.com/zhongyang219/TrafficMonitor
