@@ -41,16 +41,16 @@ sections:
   - name: AI 大模型
     items:
       - title: ChatGPT
-        icon: chatgpt.png
+        icon: openai.svg
         url: https://chatgpt.com/
       - title: DeepSeek
-        icon: deepseek.png
+        icon: deepseek.svg
         url: https://chat.deepseek.com/
       - title: Gemini
-        icon: gemini.png
+        icon: gemini.svg
         url: https://gemini.google.com/app
       - title: Grok
-        icon: grok.png
+        icon: grok.svg
         url: https://grok.com/?referrer=website
       # - title: Claude
       #   icon: favicon
@@ -61,16 +61,16 @@ sections:
   - name: 搜索引擎
     items:
       - title: DuckDuckGo
-        icon: duckduckgo.png
+        icon: duckduckgo.svg
         url: https://duckduckgo.com/
       - title: 百度
-        icon: baidu.png
+        icon: baidu.svg
         url: https://www.baidu.com/
       - title: 必应
-        icon: bing.png
+        icon: microsoft.svg
         url: https://cn.bing.com/
       - title: google
-        icon: google.png
+        icon: google.svg
         url: https://www.google.com.hk
   - name: 地图
     items:
@@ -462,6 +462,9 @@ sections:
       - title: FMHY
         icon: fmhy.png
         url: https://fmhy.net/
+      - title: SVG repo
+        icon: svg_repository.png
+        url: https://www.svgrepo.com/
   - name: Development - other
     displayData:
       itemSize: small
@@ -509,7 +512,7 @@ sections:
         icon: notepad.png
         url: https://notepad-plus-plus.org/downloads/
       - title: Git
-        icon: git.png
+        icon: git.svg
         url: https://git-scm.com/
       - title: Copilot
         icon: github-copilot.png
@@ -533,7 +536,7 @@ sections:
         icon: notion.png
         url: https://www.notion.so/
       - title: Listary
-        icon: listary.png
+        icon: listary.svg
         url: https://www.listary.com/
       - title: PostgreSQL
         icon: postgresql.png
