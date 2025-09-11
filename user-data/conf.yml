@@ -649,6 +649,36 @@ sections:
       - title: cloc
         icon: github.svg
         url: https://github.com/AlDanial/cloc
+      - title: GIMP
+        icon: gimp.svg
+        url: https://www.gimp.org/
+      - title: RetroArch
+        icon: retroarch.svg
+        url: https://www.retroarch.com/
+      - title: PPSSPP
+        icon: ppsspp.svg
+        url: https://www.ppsspp.org/
+      - title: CPU Z
+        icon: cpu-z.svg
+        url: https://www.cpuid.com/softwares/cpu-z.html
+      - title: GPU Z
+        icon: GPU-Z.png
+        url: https://www.techpowerup.com/gpuz/
+      - title: PCI Z
+        icon: PCI-Z.png
+        url: https://www.pci-z.com/
+      # - title: Crystal Disk Info
+      #   icon: PCI-Z.png
+      #   url: https://crystalmark.info
+      - title: NSIS
+        icon: nsis.png
+        url: https://nsis.sourceforge.io/
+      - title: PotPlayer
+        icon: potplayer.svg
+        url: https://potplayer.info/download/
+      - title: VLC
+        icon: vlc.svg
+        url: https://www.videolan.org/
   - name: AppStore
     displayData:
       itemSize: small
