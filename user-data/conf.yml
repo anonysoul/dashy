@@ -317,25 +317,25 @@ sections:
       rows: 1
     items:
       - title: 阿里
-        icon: source.png
+        icon: favicon
         statusCheck: true
         url: https://developer.aliyun.com/mirror/
       - title: 华为
-        icon: source.png
+        icon: favicon
         statusCheck: true
         url: https://mirrors.huaweicloud.com/home/
       - title: 网易
-        icon: source.png
+        icon: favicon
         statusCheck: true
         url: https://mirrors.163.com/
       - title: 清华大学
-        icon: source.png
+        icon: favicon
         statusCheck: true
         url: https://mirrors.tuna.tsinghua.edu.cn/
-      - title: 南京邮大
-        icon: source.png
+      - title: 南京大学
+        icon: favicon
         statusCheck: true
-        url: http://mirrors.njupt.edu.cn/
+        url: https://mirrors.nju.edu.cn/
   - name: Development - web
     displayData:
       itemSize: small
