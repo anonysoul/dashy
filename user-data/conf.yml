@@ -4,12 +4,16 @@ pageInfo:
   title: Anonydashy
   description: Welcome to anonysoul's dashy dashboard!
   navLinks:
+    - title: AppFlowy
+      path: https://appflowy.anonysoul.site
+    - title: AppFlowy-Admin
+      path: https://appflowy.anonysoul.site/console
     - title: Vaultwarden
-      path: https://vaultwarden.anonysoul.com
+      path: https://vaultwarden.anonysoul.site
     - title: IT-TOOLS
       path: https://dev.anonysoul.com
     - title: CasaOS
-      path: http://router.anonysoul.com:8114
+      path: http://10.100.10.4
   footerText: ©2022-2024. Anonysoul. All Rights Reserved
 
 # Optional app settings and configuration
